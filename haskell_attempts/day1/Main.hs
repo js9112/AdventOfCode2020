@@ -10,8 +10,8 @@ main :: IO ()
 main = do
   x <- fmap (findSum' 2 2020) getListOfNumbers
   putStrLn (show x)
-  x <- fmap (findSum' 3 2020) getListOfNumbers
-  putStrLn (show x)
+  y <- fmap (findSum' 3 2020) getListOfNumbers
+  putStrLn (show y)
 
 f :: IO String
 f = readFile "../../input1a.txt"
